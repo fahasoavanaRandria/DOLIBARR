@@ -5,6 +5,9 @@ import Dashboard from '../views/backoffice/Dashboard.vue'
 import Reset from '../views/backoffice/Reset.vue'
 import Import from '../views/backoffice/Import.vue'
 
+import Salaries from '../views/frontoffice/Salaries.vue'
+import Paiement from '../views/frontoffice/Paiement.vue'
+
 
 const routes = [
   {
@@ -25,6 +28,14 @@ const routes = [
     path: '/backoffice/import',
     component: Import,
     meta: { requiresAuth: true }
+  },
+  {
+    path: '/salaries',
+    component: Salaries
+  },
+  {
+    path: '/paiement', 
+    component: Paiement
   }
 ]
 

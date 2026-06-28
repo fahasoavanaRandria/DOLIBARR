@@ -1,7 +1,7 @@
 <template>
     <SidebarBack>
   <div>
-    <h2>Import employes</h2>
+    <h2>Import employes (CSV)</h2>
     <input type="file" accept=".csv" @change="chargerCSVEmployes" />
     <br/>
     <table v-if="employesData.length" border="1">
@@ -31,7 +31,7 @@
 
     <!--IMPORT SALAIRES-->
     <hr/>
-    <h2>Import salaires</h2>
+    <h2>Import salaires (CSV)</h2>
     <input type="file" accept=".csv" @change="chargerCSVSalaires">
     <br/>
     <table v-if="salairesData.length" border="1">
