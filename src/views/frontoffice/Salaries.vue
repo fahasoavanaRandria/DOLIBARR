@@ -1,7 +1,7 @@
 <template>
     <SidebarFront>
   <div>
-    <h1>Liste des salaries</h1>
+    <h1>Recherche des salaries</h1>
 
     <input v-model="filtreRef" placeholder="ref_employe" type="number">
     <input v-model="filtreNom" placeholder="nom">

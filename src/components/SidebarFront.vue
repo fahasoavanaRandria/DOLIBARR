@@ -4,9 +4,13 @@
       <h3>Frontoffice</h3>
       <hr>
       <ul style="list-style: none; padding: 0;">
-        <li><RouterLink to="/salaries">Liste des salaries</RouterLink></li>
+        <h4><li><RouterLink to="/salaries">Recherche multi-criteres</RouterLink></li></h4>
         <hr>
-        <li><RouterLink to="/paiement">Salaires et paiements</RouterLink></li>
+        <h4><li><RouterLink to="/paiement">Creation et Paiements</RouterLink></li></h4>
+        <hr>
+        <h4><li><RouterLink to="/generer-salaires">Genereration salaires</RouterLink></li></h4>
+        <hr>
+        <h4><li><RouterLink to="/liste-salaries">Liste des salaries</RouterLink></li></h4>
         <hr>
       </ul>
     </div>

@@ -4,15 +4,15 @@
       <h3>Backoffice</h3>
       <ul style="list-style: none; padding: 0;">
         <hr>
-        <li><RouterLink to="/backoffice/dashboard">Dashboard</RouterLink></li>
+        <h4><li><RouterLink to="/backoffice/dashboard">Dashboard</RouterLink></li></h4>
         <hr>
-        <li><RouterLink to="/backoffice/import">Import</RouterLink></li>
+        <h4><li><RouterLink to="/backoffice/import">Import</RouterLink></li></h4>
         <hr>
-        <li><RouterLink to="/backoffice/reset">Reinitialisation</RouterLink></li>
+        <h4><li><RouterLink to="/backoffice/reset">Reinitialisation</RouterLink></li></h4>
         <hr>
-        <li><RouterLink to="/backoffice/jours-feries">Jours feries</RouterLink></li>
+        <h4><li><RouterLink to="/backoffice/jours-feries">Jours feries</RouterLink></li></h4>
         <hr>
-        <li><a href="#" @click.prevent="deconnexion">Deconnexion</a></li>
+        <h4><li><a href="#" @click.prevent="deconnexion">Deconnexion</a></li></h4>
         <hr>
       </ul>
     </div>

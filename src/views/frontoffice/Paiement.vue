@@ -34,7 +34,7 @@
     <hr/>
     <!--Liste des salaires-->
 
-    <h2>Liste des salaires</h2>
+    <h2>Paiement des salaires</h2>
     <table border="2">
         <thead>
             <tr>

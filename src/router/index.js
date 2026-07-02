@@ -8,6 +8,9 @@ import JoursFeries from '../views/backoffice/JoursFeries.vue'
 
 import Salaries from '../views/frontoffice/Salaries.vue'
 import Paiement from '../views/frontoffice/Paiement.vue'
+import GenererSalaires from '../views/frontoffice/GenererSalaires.vue'
+import ListeSalaries from '../views/frontoffice/ListeSalaries.vue'
+import DetailSalarie from '../views/frontoffice/DetailSalarie.vue'
 
 
 const routes = [
@@ -35,6 +38,8 @@ const routes = [
     component: JoursFeries,
     meta: { requiresAuth: true}
   },
+
+  // VERS FRONTOFFICE
   {
     path: '/salaries',
     component: Salaries
@@ -42,6 +47,18 @@ const routes = [
   {
     path: '/paiement', 
     component: Paiement
+  },
+  {
+    path: '/generer-salaires',
+    component: GenererSalaires
+  },
+  {
+    path: '/liste-salaries',
+    component: ListeSalaries
+  },
+  {
+    path: '/salarie/:ref',
+    component: DetailSalarie
   }
 ]
 
