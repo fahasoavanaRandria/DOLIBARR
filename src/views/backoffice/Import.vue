@@ -12,6 +12,7 @@
                 <th>genre</th>
                 <th>identifiant</th>
                 <th>heure_travail_semaine</th>
+                <th>poste</th>
             </tr>
         </thead>
         <tbody>
@@ -21,6 +22,7 @@
                 <td>{{ emp.genre }}</td>
                 <td>{{ emp.identifiant }}</td>
                 <td>{{ emp.heure_travail_semaine }}</td>
+                <td>{{ emp.poste }}</td>
             </tr>
         </tbody>
     </table>
@@ -125,7 +127,8 @@ async function importerEmployes() {
           password: emp.mdp,
           gender: emp.genre === 'homme' ? 'man' : 'woman',
           weeklyhours: emp.heure_travail_semaine,
-          ref_employee: emp.ref_employe
+          ref_employee: emp.ref_employe,
+          job: emp.poste
         })
       })
       if (res.ok) success++

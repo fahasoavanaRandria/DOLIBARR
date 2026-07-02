@@ -11,6 +11,7 @@
         <option value="woman">Femme</option>
     </select>
     <input v-model="filtreHeures" placeholder="Heures/semaine" type="number">
+    <input v-model="filtrePoste" placeholder="Poste">
 
     <hr>
     <table border="2">
@@ -21,6 +22,7 @@
           <th>Genre</th>
           <th>Identifiant</th>
           <th>Heures_travail_semaine</th>
+          <th>Poste</th>
         </tr>
       </thead>
       <tbody>
@@ -30,6 +32,7 @@
           <td>{{ emp.gender === 'man' ? 'Homme' : 'Femme' }}</td>
           <td>{{ emp.login }}</td>
           <td>{{ emp.weeklyhours }}</td>
+          <td>{{ emp.job }}</td>
         </tr>
       </tbody>
     </table>
@@ -46,6 +49,7 @@ const filtreRef = ref('')
 const filtreNom = ref('')
 const filtreGenre = ref('')
 const filtreHeures = ref('')
+const filtrePoste = ref('')
 
 onMounted(async () => {
   const res = await fetch('http://localhost:3000/employes')
@@ -58,8 +62,9 @@ const employesFiltres = computed(() => {
         const nomOk = emp.lastname.toLowerCase().includes(filtreNom.value.toLowerCase())
         const genreOk = filtreGenre.value === '' || emp.gender === filtreGenre.value
         const heuresOk = filtreHeures.value === '' || emp.weeklyhours ==filtreHeures.value
+        const posteOk = filtrePoste.value === '' || (emp.job && emp.job.toLowerCase().includes(filtrePoste.value.toLowerCase()))
 
-        return refOk && nomOk && genreOk && heuresOk
+        return refOk && nomOk && genreOk && heuresOk && posteOk
     })
 })
 
