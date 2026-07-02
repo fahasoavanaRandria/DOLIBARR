@@ -4,6 +4,7 @@ import LoginBack from '../views/backoffice/LoginBack.vue'
 import Dashboard from '../views/backoffice/Dashboard.vue'
 import Reset from '../views/backoffice/Reset.vue'
 import Import from '../views/backoffice/Import.vue'
+import JoursFeries from '../views/backoffice/JoursFeries.vue'
 
 import Salaries from '../views/frontoffice/Salaries.vue'
 import Paiement from '../views/frontoffice/Paiement.vue'
@@ -28,6 +29,11 @@ const routes = [
     path: '/backoffice/import',
     component: Import,
     meta: { requiresAuth: true }
+  },
+  {
+    path: '/backoffice/jours-feries',
+    component: JoursFeries,
+    meta: { requiresAuth: true}
   },
   {
     path: '/salaries',

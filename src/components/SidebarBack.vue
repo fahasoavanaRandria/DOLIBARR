@@ -10,6 +10,8 @@
         <hr>
         <li><RouterLink to="/backoffice/reset">Reinitialisation</RouterLink></li>
         <hr>
+        <li><RouterLink to="/backoffice/jours-feries">Jours feries</RouterLink></li>
+        <hr>
         <li><a href="#" @click.prevent="deconnexion">Deconnexion</a></li>
         <hr>
       </ul>
