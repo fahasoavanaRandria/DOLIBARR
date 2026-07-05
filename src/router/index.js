@@ -69,7 +69,7 @@ const router = createRouter({
 
 router.beforeEach((to) => {
   if(to.meta.requiresAuth && !sessionStorage.getItem('backoffice_auth')) {
-    next('backoffice/login')
+    return '/backoffice/login'
   }
 })
 
